@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{EffectCallback} from 'react';
 import { useTypedSelector } from '../../utils/useTypedSelector';
 import { useActions } from '../../utils/useActions';
 import { Photo } from '../../types/photos';
@@ -11,7 +11,7 @@ import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import PopupImage from '../PopupImage/PopupImage';
 
 
-export default function Main() {
+export default function Main(effect: EffectCallback) {
   const { photos, isLoading, error, page, isDisplayLikedPhotos, popupImageUrl } = useTypedSelector(state => state.photos);
   const { fetchPhotosAC, setPhotosPageAC, removePhotoAC, toggleLikeAC, toggleDisplayLikedPhotosAC, toggleShowImagePopupAC } = useActions();
   const currentPhotos = filterPhotos(photos, isDisplayLikedPhotos);
