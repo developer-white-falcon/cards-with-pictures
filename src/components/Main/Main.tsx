@@ -34,7 +34,7 @@ export default function Main() {
  
    let abcName = () => React.useCallback(() => {
    getPhotos()
-  }, [ getPhotos ]);
+  }, [ abcName, getPhotos ]);
   
   
 
