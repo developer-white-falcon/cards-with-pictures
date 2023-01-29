@@ -45,8 +45,8 @@ export default function Main() {
   
   
   useEffect(() => {
-    getPhotos();
-  }, [page])
+    getPhotos(page);
+  }, [page,  getPhotos])
 
   
   return (
