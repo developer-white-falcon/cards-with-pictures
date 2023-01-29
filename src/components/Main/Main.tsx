@@ -43,8 +43,8 @@ export default function Main() {
   }
   
    React.useCallback(() => {
-    getPhotos()
-  }, [ getPhotos  ]);
+    getPhotos(fetchPhotosAC(page))
+  }, [ fetchPhotosAC, page  ]);
   
   
   return (
