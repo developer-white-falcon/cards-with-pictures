@@ -43,10 +43,11 @@ export default function Main() {
     toggleShowImagePopupAC(value);
   }
   
-   React.useCallback(() => {
-    getPhotos()
-  }, [getPhotos]);
   
+  useEffect(() => {
+    getPhotos();
+  }, [page])
+
   
   return (
     <div className={ styles.main }>
