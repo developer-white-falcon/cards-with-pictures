@@ -23,12 +23,11 @@ export default function Main() {
 
   
 
-  function getPhotos() {
-    fetchPhotosAC(page);
-  }
+ 
     
   React.useEffect(() => {
-   getPhotos();
+   getPhotos() {
+    fetchPhotosAC(page);  
   }, [ page, getPhotos ]);
 
 
