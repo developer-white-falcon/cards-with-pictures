@@ -29,7 +29,7 @@ export default function Main() {
     
   React.useEffect(() => {
    getPhotos();
-  }, [ page ]);
+  }, [ page, getPhotos ]);
 
 
   
