@@ -32,7 +32,7 @@ export default function Main() {
   
  React.useCallback(() => {
    fetchPhotosAC(page)
-  }, [ fetchPhotosAC, page, getPhotos ]);
+  }, [ fetchPhotosAC, page ]);
   
   
   
