@@ -27,7 +27,7 @@ export default function Main() {
   
   React.useCallback(() => {
     fetchPhotosAC(page) 
-  }, [ fetchPhotosAC, page ]);
+  }, [ fetchPhotosAC, page, isLoading ]);
   
   
   
