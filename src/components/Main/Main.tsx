@@ -42,7 +42,7 @@ export default function Main() {
 
   useEffect(() => {
     getPhotos();
-  }, [page])
+  }, [])
 
 
   return (
