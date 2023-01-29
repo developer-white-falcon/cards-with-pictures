@@ -40,8 +40,8 @@ export default function Main() {
     toggleShowImagePopupAC(value);
   }
 
-  useEffect(() => {
-   function getPhotos();
+  useEffect((getPhotos = getPhotos) => {
+   getPhotos();   
   }, [page])
 
 
