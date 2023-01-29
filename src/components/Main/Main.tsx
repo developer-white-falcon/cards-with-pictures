@@ -12,7 +12,7 @@ import PopupImage from '../PopupImage/PopupImage';
 
 
 export default function Main() {
-  const { photos, isLoading, error, page, isDisplayLikedPhotos, popupImageUrl } = useTypedSelector(state => state.photos);
+ const { photos, isLoading, error, page, isDisplayLikedPhotos, popupImageUrl } = useTypedSelector(state => state.photos);
   const { fetchPhotosAC, setPhotosPageAC, removePhotoAC, toggleLikeAC, toggleDisplayLikedPhotosAC, toggleShowImagePopupAC } = useActions();
   const currentPhotos = filterPhotos(photos, isDisplayLikedPhotos);
 
@@ -21,12 +21,9 @@ export default function Main() {
     return photosArray;
   }
 
-  
-  
   function getPhotos() {
     fetchPhotosAC(page);
   }
-  
   function nextPage() {
     setPhotosPageAC(page + 1);
   }
@@ -42,11 +39,10 @@ export default function Main() {
   function toggleShowImagePopup(value: string | null) {
     toggleShowImagePopupAC(value);
   }
-  
-  
+
   React.useEffect(() => {
     getPhotos();
-  }, [page,  getPhotos])
+  }, [page])
 
   
   return (
