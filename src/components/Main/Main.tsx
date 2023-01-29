@@ -28,7 +28,7 @@ export default function Main() {
   }
     
   React.useEffect(() => {
-   fetchPhotosAC(page);
+   getPhotos();
   }, [ fetchPhotosAC, page, getPhotos ]);
 
 
