@@ -29,7 +29,7 @@ export default function Main() {
     
   useEffect(() => {
    fetchPhotosAC(page);
-  }, [ page, getPhotos ]);
+  }, [ fetchPhotosAC, page, getPhotos ]);
 
 
   
