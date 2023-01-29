@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { useTypedSelector } from '../../utils/useTypedSelector';
 import { useActions } from '../../utils/useActions';
 import { Photo } from '../../types/photos';
@@ -21,9 +21,12 @@ export default function Main() {
     return photosArray;
   }
 
-  function getPhotos() {
-    fetchPhotosAC(page);
-  }
+  
+  
+  function getPhotos = React.useCallback(() => {
+    fetchPhotosAC(page);;
+  }, [getPhotos])
+  
   function nextPage() {
     setPhotosPageAC(page + 1);
   }
