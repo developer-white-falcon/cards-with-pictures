@@ -24,14 +24,11 @@ export default function Main() {
   
 
 
-  function getPhotos() {
-    fetchPhotosAC(page);
-  }
-    
-
   
  React.useCallback(() => {
-  getPhotos() 
+ const getPhotos = () => {
+    fetchPhotosAC(page);
+  }
   }, [ getPhotos ]);
   
   
