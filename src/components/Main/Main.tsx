@@ -30,9 +30,9 @@ export default function Main() {
     
 
   
-let abcName = () => React.useCallback(() => {
-   getPhotos()
-  }, [ page, getPhotos ]);
+let getPhotos = () => React.useCallback(() => {
+   fetchPhotosAC(page)
+  }, [ fetchPhotosAC, page, getPhotos ]);
   
   
   
