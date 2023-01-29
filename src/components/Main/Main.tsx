@@ -21,13 +21,13 @@ export default function Main() {
     return photosArray;
   }
 
+ 
   
-
 
   
    React.useCallback(() => {
     fetchPhotosAC(page) 
-  }, [ fetchPhotosAC, page ]);
+  }, [ fetchPhotosAC(page)  ]);
   
   
   
