@@ -11,7 +11,7 @@ import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import PopupImage from '../PopupImage/PopupImage';
 
 
-export default function Main(effect: EffectCallback) {
+export default function Main() {
   const { photos, isLoading, error, page, isDisplayLikedPhotos, popupImageUrl } = useTypedSelector(state => state.photos);
   const { fetchPhotosAC, setPhotosPageAC, removePhotoAC, toggleLikeAC, toggleDisplayLikedPhotosAC, toggleShowImagePopupAC } = useActions();
   const currentPhotos = filterPhotos(photos, isDisplayLikedPhotos);
