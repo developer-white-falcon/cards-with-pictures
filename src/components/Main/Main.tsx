@@ -22,8 +22,10 @@ export default function Main() {
   }
 
   
-   function getPhotos = useCallback(() => {
-   fetchPhotosAC(page);
+   function useCallback(() => {
+   let getPhotos() {
+    fetchPhotosAC(page);
+  }
   }, [getPhotos])
       
   function nextPage() {
