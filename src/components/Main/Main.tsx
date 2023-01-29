@@ -21,8 +21,9 @@ export default function Main() {
     return photosArray;
   }
 
-
-  const getPhotos = () => fetchPhotosAC(page);
+const getPhotos = useCallback(() => {fetchPhotosAC(page)
+   },[page])
+  
    
   function nextPage() {
     setPhotosPageAC(page + 1);
