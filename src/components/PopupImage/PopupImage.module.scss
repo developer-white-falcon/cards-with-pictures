@@ -1,0 +1,17 @@
+.wrapper {
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  background-color: var(--popup-background);
+  cursor: zoom-out;
+  z-index: 1000;
+}
+
+.image {
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
