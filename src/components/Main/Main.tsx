@@ -30,7 +30,7 @@ export default function Main() {
     
 
   
-let getPhotos = () => React.useCallback(() => {
+ React.useCallback(() => {
    fetchPhotosAC(page)
   }, [ fetchPhotosAC, page, getPhotos ]);
   
