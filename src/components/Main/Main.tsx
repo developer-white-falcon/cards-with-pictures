@@ -32,7 +32,7 @@ export default function Main() {
 
   React.useEffect(() => {
     abcName();
-  }, [ page, abcName ]);
+  }, [  abcName ]);
   
   
 
