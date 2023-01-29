@@ -43,9 +43,9 @@ export default function Main() {
     toggleShowImagePopupAC(value);
   }
   
-   let abcName = React.useCallback(() => {
+   let abcName = React.useCallback((abcName) => {
     getPhotos()
-  }, [getPhotos,  abcName]);
+  }, [getPhotos]);
   
   
   return (
