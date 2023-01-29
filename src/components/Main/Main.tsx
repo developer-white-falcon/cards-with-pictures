@@ -22,6 +22,7 @@ export default function Main() {
   }
 
   
+  
   function getPhotos() {
     fetchPhotosAC(page);
   }
@@ -42,9 +43,9 @@ export default function Main() {
     toggleShowImagePopupAC(value);
   }
   
-   React.useCallback(() => {
+   let abcName = React.useCallback(() => {
     getPhotos()
-  }, [getPhotos]);
+  }, [getPhotos,  abcName]);
   
   
   return (
