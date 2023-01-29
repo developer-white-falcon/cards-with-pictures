@@ -22,12 +22,16 @@ export default function Main() {
   }
 
   
-   let getPhotos = () => React.useCallback(() => {
-   fetchPhotosAC(page)
-  }, [fetchPhotosAC, page, getPhotos ]);
-  
-  
-  
+
+  function getPhotos() {
+    fetchPhotosAC(page);
+  }
+    
+  useEffect(() => {
+   fetchPhotosAC(page);
+  }, [ page, getPhotos ]);
+
+
   
    
   function nextPage() {
