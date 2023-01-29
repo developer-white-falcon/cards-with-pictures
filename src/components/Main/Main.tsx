@@ -1,4 +1,4 @@
-import React,{EffectCallback} from 'react';
+import React from 'react';
 import { useTypedSelector } from '../../utils/useTypedSelector';
 import { useActions } from '../../utils/useActions';
 import { Photo } from '../../types/photos';
@@ -24,15 +24,19 @@ export default function Main() {
   
 
 
-  function getPhotos() {
+  function getPhotos {
     fetchPhotosAC(page);
   }
   
  
-    
-  React.useEffect(() => {  
-    getPhotos()  
-  }, [ page, getPhotos ]);
+ 
+ let abcName = getPhotos;
+
+  useEffect(() => {
+    abcName();
+  }, [ page, abcName ]);
+
+
 
 
   
