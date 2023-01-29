@@ -25,12 +25,11 @@ export default function Main() {
 
 
   
-  React.useCallback(() => {
-   
-  function getPhotos() {
+  React.useCallback(() => {   
     fetchPhotosAC(page);
-  }
-  });
+    isLoading
+  
+  },[etchPhotosAC,page,  isLoading] );
   
   
   
