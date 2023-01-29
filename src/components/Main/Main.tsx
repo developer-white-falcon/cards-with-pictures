@@ -21,7 +21,10 @@ export default function Main() {
     return photosArray;
   }
 
-  function fetchPhotosAC(page)
+  
+  function getPhotos() {
+    fetchPhotosAC(page);
+  }
   
   function nextPage() {
     setPhotosPageAC(page + 1);
@@ -40,8 +43,8 @@ export default function Main() {
   }
   
    React.useCallback(() => {
-    fetchPhotosAC(page) 
-  }, [ fetchPhotosAC, page  ]);
+    getPhotos()
+  }, [  page, getPhotos  ]);
   
   
   return (
