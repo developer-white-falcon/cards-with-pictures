@@ -21,13 +21,11 @@ export default function Main() {
     return photosArray;
   }
 
-  
-   function useCallback(() => {
-   let getPhotos {
-    fetchPhotosAC(page);
+   const callback = () => {
+   fetchPhotosAC(page)
   }
-  }, [getPhotos])
-      
+  
+   
   function nextPage() {
     setPhotosPageAC(page + 1);
   }
