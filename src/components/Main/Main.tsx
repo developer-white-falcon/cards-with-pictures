@@ -45,7 +45,7 @@ export default function Main() {
   
    React.useCallback(() => {
     getPhotos()
-  }, [getPhotos()]);
+  }, [getPhotos]);
   
   
   return (
