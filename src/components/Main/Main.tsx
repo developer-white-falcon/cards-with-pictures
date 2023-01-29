@@ -24,17 +24,25 @@ export default function Main() {
   
 
 
-  function getPhotos {
+  function getPhotos() {
     fetchPhotosAC(page);
   }
   
+  
+    let abcName = getPhotos;
  
  
- let abcName = getPhotos;
+   let abcName = () => React.useCallback(() => {
+   getPhotos()
+  }, [ getPhotos ]);
+  
+  
 
-  useEffect(() => {
+  React.useEffect(() => {
     abcName();
   }, [ page, abcName ]);
+  
+  
 
 
 
