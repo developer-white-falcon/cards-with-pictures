@@ -45,7 +45,7 @@ export default function Main() {
   
   
   React.useEffect(() => {
-    getPhotos(page);
+    getPhotos();
   }, [page,  getPhotos])
 
   
