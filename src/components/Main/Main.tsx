@@ -40,11 +40,6 @@ export default function Main() {
     toggleShowImagePopupAC(value);
   }
 
- let abcName = getPhotos;
-
-  useEffect(() => {
-    abcName();
-  }, [ page, abcName ]);
 
   return (
     <div className={ styles.main }>
