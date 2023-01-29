@@ -32,7 +32,7 @@ export default function Main() {
   
 let abcName = () => React.useCallback(() => {
    getPhotos()
-  }, [abcName, page, getPhotos ]);
+  }, [ page, getPhotos ]);
   
   
   
