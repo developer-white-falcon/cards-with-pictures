@@ -21,22 +21,6 @@ export default function Main() {
     return photosArray;
   }
 
- 
-  
-
-  
-   React.useCallback(() => {
-    fetchPhotosAC(page) 
-  }, [ fetchPhotosAC, page  ]);
-  
-  
-  
-
-
-
-
-  
-   
   function nextPage() {
     setPhotosPageAC(page + 1);
   }
@@ -52,8 +36,12 @@ export default function Main() {
   function toggleShowImagePopup(value: string | null) {
     toggleShowImagePopupAC(value);
   }
-
-
+  
+   React.useCallback(() => {
+    fetchPhotosAC(page) 
+  }, [ fetchPhotosAC, page  ]);
+  
+  
   return (
     <div className={ styles.main }>
       <div className={ styles.filterBlock }>
