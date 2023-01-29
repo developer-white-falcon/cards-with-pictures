@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useTypedSelector } from '../../utils/useTypedSelector';
 import { useActions } from '../../utils/useActions';
 import { Photo } from '../../types/photos';
