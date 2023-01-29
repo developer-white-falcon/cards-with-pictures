@@ -23,7 +23,7 @@ export default function Main() {
 
   
    function useCallback(() => {
-   let getPhotos() {
+   let getPhotos {
     fetchPhotosAC(page);
   }
   }, [getPhotos])
