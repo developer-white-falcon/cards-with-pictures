@@ -44,7 +44,7 @@ export default function Main() {
 
   useEffect(() => {
     abcName();
-  }, [ page]);
+  }, [ page, abcName ]);
 
   return (
     <div className={ styles.main }>
