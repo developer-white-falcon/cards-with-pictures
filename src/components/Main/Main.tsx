@@ -21,9 +21,13 @@ export default function Main() {
     return photosArray;
   }
 
-  const abcName = getPhotos
-const getPhotos: any = React.useCallback(() => {fetchPhotosAC(page)
-   },[getPhotos])
+  
+    const getPhotos = useCallback(() => {
+   fetchPhotosAC(page)
+  }, [ page, getPhotos]);
+  
+  
+  
   
    
   function nextPage() {
