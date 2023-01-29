@@ -21,6 +21,8 @@ export default function Main() {
     return photosArray;
   }
 
+  function fetchPhotosAC(page)
+  
   function nextPage() {
     setPhotosPageAC(page + 1);
   }
