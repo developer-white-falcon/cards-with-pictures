@@ -22,7 +22,7 @@ export default function Main() {
   }
 
 const getPhotos = React.useCallback(() => {fetchPhotosAC(page)
-   },[page])
+   },[getPhotos])
   
    
   function nextPage() {
